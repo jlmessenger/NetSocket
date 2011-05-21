@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSocket", "NetSocket\NetSocket.csproj", "{0D0BC817-7947-411B-A45E-34C32F9B7C40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNetServer", "TestNetServer\TestNetServer.csproj", "{2019C19E-1B97-4B7B-859C-FCCB35CED12C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNetClient", "TestNetClient\TestNetClient.csproj", "{981CCD16-0765-4522-B6CE-75847738E845}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D0BC817-7947-411B-A45E-34C32F9B7C40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D0BC817-7947-411B-A45E-34C32F9B7C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D0BC817-7947-411B-A45E-34C32F9B7C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D0BC817-7947-411B-A45E-34C32F9B7C40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2019C19E-1B97-4B7B-859C-FCCB35CED12C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2019C19E-1B97-4B7B-859C-FCCB35CED12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2019C19E-1B97-4B7B-859C-FCCB35CED12C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2019C19E-1B97-4B7B-859C-FCCB35CED12C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981CCD16-0765-4522-B6CE-75847738E845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981CCD16-0765-4522-B6CE-75847738E845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981CCD16-0765-4522-B6CE-75847738E845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981CCD16-0765-4522-B6CE-75847738E845}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

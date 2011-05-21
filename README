@@ -1,0 +1,80 @@
+NETSOCKET TCP CLIENT-SERVER SOCKET LIB
+
+Library builds to NetSocket.dll
+
+
+Allows binary messages to be sent from client to server and vice-versa. Binary messages are prefixed with a simple header to track messages boundaries and keep everything synchronized. Messages are sent asynchronously in the order they are queued. The library automatically handles errors and disconnection as well as other erratum associated with the built-in .Net Socket class.
+
+
+Includes demo applications TestNetClient and TestNetServer
+
+The TestNetServer application simply listens for connections on port 3333 and automatically accepts the first clients that connect. Valid messages are logged and echoed back to the client.
+
+The TestNetClient application can connect to the server and send text messages or files.
+
+
+
+Enums:
+JLM.NetSocket.SocketState { Closed, Closing, Connected, Connecting, Listening }
+
+Classes:
+JLM.NetSocket.NetSocketConnectedEventArgs
+	Properties:
+	IPAddress SourceIP
+
+JLM.NetSocket.NetSocketDisconnectedEventArgs
+	Properties:
+	string Reason;
+
+JLM.NetSocket.NetSockStateChangedEventArgs
+	Properties:
+	SocketState NewState
+	SocketState PrevState
+
+JLM.NetSocket.NetSockDataArrivalEventArgs
+	Properties:
+	byte[] Data
+
+JLM.NetSocket.NetSockErrorReceivedEventArgs
+	Properties:
+	string Function
+	Exception Exception
+
+JLM.NetSocket.NetSockConnectionRequestEventArgs
+	Properties:
+	Socket Client
+
+
+JLM.NetSocket.NetBase (abstract)
+	Properties:
+	SocketState State
+	int LocalPort
+	string[] LocalIP
+	
+	Events:
+	Connected
+	Disconnected
+	StateChanged
+	DataArrived
+	ErrorReceived
+
+	Methods:
+	void Send(byte[] data)
+	void Close(string reason)
+
+
+JLM.NetSocket.NetClient > NetBase
+	Events:
+	ConnectionRequested
+
+	Methods:
+	void Listen(int port)
+	void Accept(Socket client)
+	
+
+JLM.NetSocket.NetServer > NetBase
+	Methods:
+	void Connect(IPEndPoint server)
+
+License: GPL
+Copyright: 2011 Jeremy Messenger
