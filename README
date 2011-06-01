@@ -1,9 +1,9 @@
 NETSOCKET TCP CLIENT-SERVER SOCKET LIB
 
 Library builds to NetSocket.dll
+Works in .Net 2.0+ and mono 2.6+
 
-
-Allows binary messages to be sent from client to server and vice-versa. Binary messages are prefixed with a simple header to track messages boundaries and keep everything synchronized. Messages are sent asynchronously in the order they are queued. The library automatically handles errors and disconnection as well as other erratum associated with the built-in .Net Socket class.
+Allows binary messages to be sent from client to server and vice-versa. Messages are prefixed with a simple header to track messages boundaries and keep everything synchronized. Messages are sent asynchronously in the order they are queued. The library automatically handles errors and disconnection as well as other erratum associated with the built-in Socket class.
 
 
 Includes demo applications TestNetClient and TestNetServer
@@ -11,7 +11,6 @@ Includes demo applications TestNetClient and TestNetServer
 The TestNetServer application simply listens for connections on port 3333 and automatically accepts the first clients that connect. Valid messages are logged and echoed back to the client.
 
 The TestNetClient application can connect to the server and send text messages or files.
-
 
 
 Enums:
@@ -76,5 +75,6 @@ JLM.NetSocket.NetServer > NetBase
 	Methods:
 	void Connect(IPEndPoint server)
 
-License: GPL
+
+License: LGPL <http://www.gnu.org/licenses/lgpl.html>
 Copyright: 2011 Jeremy Messenger

@@ -15,7 +15,7 @@ using System.Runtime.Serialization.Formatters.Binary;
  * @version   1.0
  * @author    Jeremy Messenger <jlmessengertech+githib@gmail.com>
  * @copyright 2011 Jeremy Messenger
- * @license   GPL
+ * @license   LGPL <http://www.gnu.org/licenses/lgpl.html>
  * @link      http://jlmessenger.com
  */
 namespace JLM.NetSocket
